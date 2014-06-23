@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Digital Snow</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
+      <link rel="stylesheet" href="css/font-awesome.min.css">
+	<script type="text/javascript">
+		/* Intel native bridge is available */
+		var onDeviceReady=function(){
+		//hide splash screen
+		intel.xdk.device.hideSplashScreen();
+		};
+		document.addEventListener("intel.xdk.device.ready",onDeviceReady,false);
+	</script>
+     
+  </head>
+  <body>
+      
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+          <div class="list-block">
+              <div class="profile">
+            <img height="130px" src="img/profile.png" />
+            <h2>Stephan Bosma</h2>
+                  </div>
+<ul>
+<li><a href="form.html" class="close-panel item-link">
+<div class="item-content">
+<div class="item-media"><i class="fa fa-user"></i></div>
+<div class="item-inner">
+<div class="item-title">Acount</div>
+</div>
+</div></a></li>
+    <li><a href="slider-multiple.html" class="close-panel item-link">
+<div class="item-content">
+<div class="item-media"><i class="fa fa-user"></i></div>
+<div class="item-inner">
+<div class="item-title">slider enz</div>
+</div>
+</div></a></li>
+</ul>
+</div>
+      </div>
+    </div>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
+      </div>
+    </div>
+    <!-- Views-->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+          
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="left">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"><i class="fa fa-bars"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <div data-page="index" class="page">
+            <!-- Scrollable page content-->
+            <div class="page-content">
+                <div data-pagination=".slider-pagination" class="slider-container slider-init ks-demo-slider slider-container-horizontal">
+<div class="slider-pagination"><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet slider-pagination-active"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span></div>
+<div class="slider-wrapper" style="transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate3d(-942px, 0px, 0px);">
+<div class="slider-slide cruise">
+<div class="content-block home">
+<div class="row no-gutter">
+<div class="col-50 home"><a href="music.html"><i class="fa fa-music"></i> Add music</a></div>
+<div class="col-50 home"><a href="#"><i class="fa fa-location-arrow"></i> Add route</a></div>
+    <div class="col-100 track"><a href="slider-horizontal.html"><h2>Cruise</h2></a></div>
+</div>
+</div>
+</div>
+    
+<div class="slider-slide speedrun">
+<div class="content-block home">
+<div class="row no-gutter">
+<div class="col-50 home"><a href="music.html"><i class="fa fa-music"></i> Add music</a></div>
+<div class="col-50 home"><a href="#"><i class="fa fa-location-arrow"></i> Add route</a></div>
+    <div class="col-100 track"><a href="slider-horizontal.html"><h2>Speedrun</h2></a></div>
+</div>
+</div>
+</div>
+    
+<div class="slider-slide freestyle">
+<div class="content-block home">
+<div class="row no-gutter">
+<div class="col-50 home"><a href="music.html"><i class="fa fa-music"></i> Add music</a></div>
+<div class="col-50 home"><a href="#"><i class="fa fa-location-arrow"></i> Select funpark</a></div>
+    <div class="col-100 track"><a href="#"><h2>Freestyle</h2></a></div>
+</div>
+</div>
+</div>
+                
+            
+                          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+  </body>
+</html>
