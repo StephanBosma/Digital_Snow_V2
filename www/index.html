@@ -31,7 +31,7 @@
     <div class="panel panel-left panel-reveal">
       <div class="content-block">
           <div class="list-block">
-              <div class="profile">
+            <div class="profile">
             <img height="130px" src="img/profile.png" />
             <h2>Stephan Bosma</h2>
                   </div>
@@ -43,11 +43,25 @@
 <div class="item-title">Acount</div>
 </div>
 </div></a></li>
+    <li><a href="friends.html" class="close-panel item-link">
+<div class="item-content">
+<div class="item-media"><i class="fa fa-users"></i></div>
+<div class="item-inner">
+<div class="item-title">Friends</div>
+</div>
+</div></a></li>
+    <li><a href="routes.html" class="close-panel item-link">
+<div class="item-content">
+<div class="item-media"><i class="fa fa-history"></i></div>
+<div class="item-inner">
+<div class="item-title">History</div>
+</div>
+</div></a></li>
     <li><a href="slider-multiple.html" class="close-panel item-link">
 <div class="item-content">
-<div class="item-media"><i class="fa fa-user"></i></div>
+<div class="item-media"><i class="fa fa-cog"></i></div>
 <div class="item-inner">
-<div class="item-title">slider enz</div>
+<div class="item-title">Settings</div>
 </div>
 </div></a></li>
 </ul>
@@ -80,6 +94,8 @@
           <div data-page="index" class="page">
             <!-- Scrollable page content-->
             <div class="page-content">
+                
+                
                 <div data-pagination=".slider-pagination" class="slider-container slider-init ks-demo-slider slider-container-horizontal">
 <div class="slider-pagination"><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet slider-pagination-active"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span><span class="slider-pagination-bullet"></span></div>
 <div class="slider-wrapper" style="transition: 0ms; -webkit-transition: 0ms; -webkit-transform: translate3d(-942px, 0px, 0px);">
@@ -87,8 +103,8 @@
 <div class="content-block home">
 <div class="row no-gutter">
 <div class="col-50 home"><a href="music.html"><i class="fa fa-music"></i> Add music</a></div>
-<div class="col-50 home"><a href="#"><i class="fa fa-location-arrow"></i> Add route</a></div>
-    <div class="col-100 track"><a href="slider-horizontal.html"><h2>Cruise</h2></a></div>
+<div class="col-50 home"><a href="routes.html"><i class="fa fa-location-arrow"></i> Add route</a></div>
+    <div class="col-100 track"><a class="actions" href="slider-horizontal.html"><h2>Cruise</h2></a></div>
 </div>
 </div>
 </div>
@@ -97,7 +113,7 @@
 <div class="content-block home">
 <div class="row no-gutter">
 <div class="col-50 home"><a href="music.html"><i class="fa fa-music"></i> Add music</a></div>
-<div class="col-50 home"><a href="#"><i class="fa fa-location-arrow"></i> Add route</a></div>
+<div class="col-50 home"><a href="challenger.html"><i class="fa fa-user"></i> Add challenger</a></div>
     <div class="col-100 track"><a href="slider-horizontal.html"><h2>Speedrun</h2></a></div>
 </div>
 </div>
@@ -107,18 +123,52 @@
 <div class="content-block home">
 <div class="row no-gutter">
 <div class="col-50 home"><a href="music.html"><i class="fa fa-music"></i> Add music</a></div>
-<div class="col-50 home"><a href="#"><i class="fa fa-location-arrow"></i> Select funpark</a></div>
-    <div class="col-100 track"><a href="#"><h2>Freestyle</h2></a></div>
+<div class="col-50 home"><a href="funparks.html"><i class="fa fa-location-arrow"></i> Select funpark</a></div>
+    <div class="col-100 track"><a href="slider-horizontal.html"><h2>Freestyle</h2></a></div>
 </div>
 </div>
 </div>
-                
-            
-                          </div>
+</div>
           </div>
         </div>
       </div>
     </div>
+          </div></div>
+      <div class="popover popover-menu" style="display: none; top: 79px; left: 700.5px;">
+<div class="popover-angle on-bottom" style="left: 127px;"></div>
+<div class="popover-inner">
+<div class="list-block">
+    <div class="row no-gutter">
+<a href="edit.html" class="list-button item-link"><i class="fa fa-pencil"></i> Add text</a>
+<div class="item-input">
+<textarea></textarea>
+</div>
+</div>
+</div>
+</div>
+</div>
+      <div class="popover popover-menu2" style="display: none; top: 79px; left: 700.5px;">
+<div class="popover-angle on-bottom" style="left: 127px;"></div>
+<div class="popover-inner">
+<div class="list-block">
+    <div class="row no-gutter">
+        <div class="col-100 popfood"><img src="img/routes/food.png" />Chez Jurre</div>
+<div class="col-100"><a href="edit.html" class="list-button item-link"><i class="fa fa-location-arrow"></i> Navigate to</a></div>
+</div>
+</div>
+</div>
+</div>
+      <div class="popover popover-menu3" style="display: none; top: 79px; left: 700.5px;">
+<div class="popover-angle on-bottom" style="left: 127px;"></div>
+<div class="popover-inner">.bosma
+<div class="list-block">
+    <div class="row no-gutter">
+        <div class="col-100 popfood"><img src="img/gif/cruise-low.gif" width="145px" height="145px" />Your flow was a bit off</div>
+<div class="col-100"><a href="flow.html" class="list-button item-link"><i class="fa fa-info"></i> Here's a tip</a></div>
+</div>
+</div>
+</div>
+</div>
     <!-- Path to Framework7 Library JS-->
     <script type="text/javascript" src="js/framework7.min.js"></script>
     <!-- Path to your app js-->
